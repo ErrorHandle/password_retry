@@ -8,5 +8,9 @@ while count < 4:
 		break
 	else:
 		#print('密碼錯誤! 還有', 3 - count, '機會') casting
-		print('密碼錯誤! 還有', str(3 - count), '機會')
+		print('密碼錯誤!')
+		if count < 3:
+			print('還有', 3 - count, '次機會')
+		else:
+			print('請稍後再輸入密碼')
 	count += 1
